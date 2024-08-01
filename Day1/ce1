@@ -1,0 +1,17 @@
+import React from 'react';
+
+function alertMsg()
+{
+    alert("Message from javascript Alert!")
+    console.log("Message to developer")
+}
+function App(){
+    return(
+        <div className="App">
+            <h1>Let we the output of javascript</h1>
+            <button onClick={alertMsg}>show</button>
+
+        </div>
+    )
+}
+export default App;
