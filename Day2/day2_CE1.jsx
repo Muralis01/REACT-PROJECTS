@@ -1,11 +1,26 @@
 import React from 'react';
-
-const App = ()=> {
+function App() {
+  const headingStyle = {
+    color: 'green',
+  };
+  const paragraphStyle = {
+    color: 'darkblue',
+    fontSize: '16px',
+  };
+  const  divStyle = {
+    backgroundColor: 'lightblue',
+    color: 'darkblue',
+    padding: '10px',
+    border: '1px solid blue',
+    borderRadius: '5px',
+  };
   return (
-    <div >
-    <h1>Hello , world</h1>
+    <div style={divStyle}>
+      <h1 style={headingStyle}>Inline Style in JSX Example</h1>
+      <p style={paragraphStyle}>
+        This is a paragraph with inline styles applied.
+      </p>
     </div>
   );
 }
-
 export default App;
